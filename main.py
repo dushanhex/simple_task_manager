@@ -27,7 +27,7 @@ def view_tasks():
 def complete_task():
     view_tasks()
     if tasks:
-        num = int(input("Enter task number to complete: "))
+        num = int(input("Please Enter task number to complete: "))
         if 1 <= num <= len(tasks):
             tasks[num-1]["completed"] = True
             print(f"✓ Completed: {tasks[num-1]['task']}")
@@ -35,7 +35,7 @@ def complete_task():
 def delete_task():
     view_tasks()
     if tasks:
-        num = int(input("Enter task number to delete: "))
+        num = int(input("Please Enter task number to delete: "))
         if 1 <= num <= len(tasks):
             removed = tasks.pop(num-1)
             print(f"✓ Deleted: {removed['task']}")
@@ -57,4 +57,4 @@ while True:
         print("Goodbye!")
         break
     else:
-        print("Invalid option!")
+        print("Invalid option! Please try again")
