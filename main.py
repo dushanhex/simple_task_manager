@@ -43,7 +43,7 @@ def delete_task():
 # Main program loop
 while True:
     show_menu()
-    choice = input("\nChoose option (1-5): ")
+    choice = input("\nPlease Choose option (1-5): ")
     
     if choice == "1":
         add_task()
@@ -57,4 +57,4 @@ while True:
         print("Goodbye!")
         break
     else:
-        print("Invalid option! Please try again")
+        print("Invalid option! Please try again Later")
