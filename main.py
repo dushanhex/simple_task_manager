@@ -2,7 +2,7 @@
 tasks = []
 
 def show_menu():
-    print("\n=== Task Manager ===")
+    print("\n=== Task Manager Application ===")
     print("1. Add task")
     print("2. View tasks")
     print("3. Complete task")
